@@ -91,4 +91,6 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  config.logstash.type = :file
+  config.logstash.path = "log/logstash_#{Rails.env}.log"
 end
